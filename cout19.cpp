@@ -1,4 +1,7 @@
-//constructor
+//constructor ->A constructor gets called automatically when we create the object of the class.
+//constructors can be overloaded.
+//The destructor is only one way to destroy the object created by the constructor. 
+//Hence destructor can-not be overloaded.
 
 #include <iostream>
 using namespace std;
@@ -29,6 +32,11 @@ class Student
            gpa = y;
         }
 
+        Test() { cout << "\n Constructor executed"; }
+ 
+          // User-Defined Destructor
+        ~Test() { cout << "\n Destructor executed"; }
+
 };
 
 int main()
@@ -42,5 +50,6 @@ int main()
     Student s2(102,3.44);
     s2.display();
 
-    return 0;
+    Test t;
+return 0;
 }

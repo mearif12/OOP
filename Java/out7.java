@@ -12,6 +12,4 @@
          System.out.println("Not a letter");
        }
 
-     }
-
 }}

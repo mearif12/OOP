@@ -1,5 +1,5 @@
  // print 1-10 using loop control statements
-
+class out8{public static void main(String[] args){
  System.out.println("Using for loop:");
  for (int i = 1; i <= 10; i++) {
      System.out.println(i);
@@ -24,3 +24,4 @@
  for (int number : numbers) {
      System.out.println(number);
  }
+}}

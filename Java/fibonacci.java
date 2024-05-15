@@ -1,6 +1,6 @@
   import java.util.Scanner;
 
-  class Program26 {public static void main(String[] args) {
+  class fibonacci {public static void main(String[] args) {
       try (Scanner input = new Scanner(System.in)) {
 
         System.out.print("How many fibonacci numbers? ");

@@ -26,11 +26,11 @@ class task6{public static void main(String[] args){
     Scanner scan = new Scanner(System.in);
 
     System.out.println("Enter the first String: ");
-    str1 = scan.next();
+    str1 = scan.nextLine();
     System.out.println("You entered: "+str1);
 
     System.out.println("Enter the second string: ");
-    str2 = scan.next();
+    str2 = scan.nextLine();
     System.out.println("You entered: "+str2);
 
     //String str3 = str1.concat(" "+str2);

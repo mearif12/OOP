@@ -4,23 +4,21 @@
 using namespace std;
 int main()
 {
-    
+// printing an integer array   
     int marks[5];
     int x;
-
    for(x=0; x<5; x++)
    {
        cout << "Marks for student " << x+1 << " = ";
        cin >> marks[x];
    }
-
-    // printing an integer array
     for(x=0; x<5; x++)
     {
         cout << marks[x] << endl;
     }
 
-    //printing an string array
+//printing an string array
+        int n;
         cout << "Enter the number of subjects: ";
         cin >> n;
         string sub[n];

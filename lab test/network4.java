@@ -1,6 +1,5 @@
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+import javax.swing.*;
 
 public class Out {
 
@@ -14,13 +13,18 @@ public class Out {
 
         //Text field to show input and result
         JTextField display = new JTextField();
-        display.setEditable(false); // user cannot type manually
-        frame.add(display, BorderLayout.NORTH);
+        display.setEditable(false);
+        display.setPreferredSize(new Dimension(0, 70));
+        display.setFont(new Font("Arial", Font.BOLD, 28));
+        display.setHorizontalAlignment(JTextField.RIGHT);
+        display.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+        frame.add(txt, BorderLayout.NORTH);
 
         //Panel for buttons
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(4, 4, 5, 5));
-        frame.add(panel, BorderLayout.CENTER);
+        panel.setLayout(new GridLayout(4,4,5,5));
+        panel.setFont(new Font(null,0, 22));
+        frame.add(panel,BorderLayout.CENTER);
 
         //Variables to store numbers and operator
         final int[] number1 = {0};

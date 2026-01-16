@@ -1,8 +1,5 @@
-import java.awt.FlowLayout;
-import java.awt.Image;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import java.awt.*;
+import javax.swing.*;
 
 public class ImageLoader {
 

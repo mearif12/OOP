@@ -18,7 +18,7 @@ public class Out {
         display.setFont(new Font("Arial", Font.BOLD, 28));
         display.setHorizontalAlignment(JTextField.RIGHT);
         display.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
-        frame.add(txt, BorderLayout.NORTH);
+        frame.add(display, BorderLayout.NORTH);
 
         //Panel for buttons
         JPanel panel = new JPanel();

@@ -45,8 +45,17 @@ public class Form {
         panel.add(success);
 
         //SIMPLE AND CLEAN ACTION LISTENER
-        button.addActionListener(e -> success.setText("Saved Successfully"));
-
+        button.addActionListener(e -> {
+            success.setText("Saved Successfully.");
+        
+            // Timer to clear text after 5 seconds (5000 ms)
+            Timer timer = new Timer(5000, event -> {
+                success.setText("");
+            });
+            timer.setRepeats(false); // run only once
+            timer.start();
+        });
+        
         frame.setVisible(true);
     }
 }

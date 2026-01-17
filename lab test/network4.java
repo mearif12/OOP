@@ -27,8 +27,8 @@ public class Out {
         frame.add(panel,BorderLayout.CENTER);
 
         //Variables to store numbers and operator
-        final int[] number1 = {0};
-        final int[] number2 = {0};
+        final double[] number1 = {0};
+        final double[] number2 = {0};
         final char[] operator = {' '};
 
         //Button labels
@@ -51,12 +51,12 @@ public class Out {
                     display.setText("");
                 } 
                 else if (btn.equals("+") || btn.equals("-") || btn.equals("*") || btn.equals("/")) {
-                    number1[0] = Integer.parseInt(display.getText());
+                    number1[0] = Double.parseDouble(display.getText());
                     operator[0] = btn.charAt(0);
                     display.setText("");
                 } 
                 else if (btn.equals("=")) {
-                    number2[0] = Integer.parseInt(display.getText());
+                    number2[0] = Double.parseDouble(display.getText());
                     int result = 0;
                     switch (operator[0]) {
                         case '+' -> result = number1[0] + number2[0];

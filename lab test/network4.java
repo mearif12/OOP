@@ -57,7 +57,7 @@ public class Out {
                 } 
                 else if (btn.equals("=")) {
                     number2[0] = Double.parseDouble(display.getText());
-                    int result = 0;
+                    double result = 0;
                     switch (operator[0]) {
                         case '+' -> result = number1[0] + number2[0];
                         case '-' -> result = number1[0] - number2[0];

@@ -48,7 +48,11 @@ public class Out {
                 String btn = button.getText();
 
                 if (btn.equals("C")) {
-                    display.setText("");
+                    //display.setText("");
+                    String current = display.getText();
+                    if(!current.isEmpty()){
+                        display.setText(current.substring(0,current.length()-1));
+                    }  
                 } 
                 else if (btn.equals("+") || btn.equals("-") || btn.equals("*") || btn.equals("/")) {
                     number1[0] = Double.parseDouble(display.getText());

@@ -14,7 +14,7 @@ class A extends Thread {
 class B extends Thread {
     private volatile boolean running = true;
     public void run() {
-        for (int j = 1; j <= 5; j++) {
+        for (int j = 1; j <= 5 && running; j++) {
             System.out.println("\tFrom Thread B : j = " + j);
             if (j == 3)
                 running = false;

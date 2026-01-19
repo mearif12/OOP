@@ -68,7 +68,7 @@ public class Out {
                         case '*' -> result = number1[0] * number2[0];
                         case '/' -> result = number1[0] / number2[0];
                     }
-                    display.setText("" + result);
+                    display.setText(String.format("%.2f", result));
                 } 
                 else {
                     display.setText(display.getText() + btn);

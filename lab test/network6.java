@@ -30,7 +30,7 @@ class C extends Thread {
             System.out.println("\tFrom Thread C : k = " + k);
             if (k == 1)
                 try {
-                    sleep(1000);
+                    Thread.sleep(1000);
                 } catch (Exception e) {
                 }
         }

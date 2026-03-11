@@ -142,7 +142,7 @@ public class mySql {
 }
 
 /**
-1.compile :  javac -cp ".;mysql-connector-j-8.3.0.jar" mySql.java
+1.compile :  javac -cp ".;mysql-connector-j-x.x.x.jar" mySql.java
 
-2.run :   java -cp ".;mysql-connector-j-8.3.0.jar" mySql
+2.run :   java -cp ".;mysql-connector-j-x.x.x.jar" mySql
 */
